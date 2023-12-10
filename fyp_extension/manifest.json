@@ -1,0 +1,23 @@
+{
+  "name": "Sustainify",
+  "version": "0.0.1",
+  "description": "Sustainifier",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/search*"],
+      "js": ["contentScript.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "permissions": ["identity", "activeTab", "storage"],
+  "background": {
+    "page": "background.html",
+    "persistant": false
+  },
+  "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://www.googleapis.com; object-src 'self'"
+}
