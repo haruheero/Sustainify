@@ -35,8 +35,18 @@ Sustainify is a browser extension that captures web pages and leverages a Natura
    ```bash
    cd Sustainify
    ```
+   2.1 Run backend
+   ```bash
+   python3 Apis.py
+   ```
+   2.2 Run frontend
+   ```bash
+   cd frontend
+   npm i
+   npm start
+   ```
 
-3. Load the extension in your browser:
+4. Load the extension in your browser:
    - Follow browser-specific instructions for loading unpacked extensions.
 
 ## Usage
